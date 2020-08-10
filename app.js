@@ -3,9 +3,7 @@ const app = express()
 const port = 3000
 
 app.use((req, res, next) => {
-  console.log('Time:', new Date(), '|', req.method, 'from',
-
-    req.originalUrl)
+  console.log('Time:', new Date(), '|', req.method, 'from', req.originalUrl)
   next()
 })
 
